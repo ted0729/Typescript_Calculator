@@ -1,30 +1,10 @@
-# React + TypeScript + Vite
+# 계산기 작업
+<img width="548" alt="스크린샷 2024-03-24 오후 9 52 32" src="https://github.com/ted0729/Typescript_Calculator/assets/138233242/1c3299c0-a040-4a7f-b704-642d542f1d68">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vaildation 3가지
+1. 입력 값 확인: 연산자로 끝나는 식이거나 괄호가 제대로 닫히지 않은 경우 "Invalid input" 메시지
+2. 결과 값 범위: 계산 결과가 너무 크거나 너무 작을 때, 예를 들어 JavaScript에서 처리할 수 있는 안전한 정수 범위를 벗어나는 경우 "Result out of bounds" 메세지
+3. 0으로 나눈 값 확인: 자연수 나누기 0을 하는 경우 "Cannot divide by zero" 메세지
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# 연속 계산 기능 구현
+# 키보드, 마우스 연산자 입력 기능 구현
